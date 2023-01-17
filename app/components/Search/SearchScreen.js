@@ -9,7 +9,7 @@ import HighlightText from '@sanar/react-native-highlight-text'
 import RNProgressHud from 'progress-hud'
 import firestore from '@react-native-firebase/firestore'
 
-const InfoCartScreen = () => {
+const SearchScreen = () => {
     const route = useRoute()
     const { search } = route.params
     const dispatch = useDispatch()
@@ -77,7 +77,7 @@ const InfoCartScreen = () => {
     )
 }
 
-export default InfoCartScreen
+export default SearchScreen
 
 const styles = StyleSheet.create({
     container: {

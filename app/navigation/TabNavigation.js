@@ -2,18 +2,17 @@ import React from 'react'
 import { createStackNavigator } from '@react-navigation/stack'
 import { COLORS } from '../contains'
 import MyTabs from './MyTab'
-import {
-    CartScreen,
-    FillterScreen,
-    ProductScreen,
-    SearchScreen,
-    InfoShipScreen,
-    AddressScreen
-} from '../screens'
+
 import { HeaderScreen } from '../components'
 import 'react-native-gesture-handler'
-import ProfileEditScreen from '../screens/ProfileEdit'
-import ProfileInfoScreen from '../screens/ProfileInfo'
+import ProfileEditScreen from '../components/Profile/ProfileEditScreen'
+import CartScreen from '../components/Cart/CartScreen'
+import FillterScreen from '../components/Fillter/FillterScreen'
+import ProductScreen from '../components/Product/ProductScreen'
+import InfoShipScreen from '../components/Cart/InfoShipScreen'
+import AddressScreen from '../components/Cart/AddressScreen'
+import ProfileInfoScreen from '../components/Profile/ProfileInfoScreen'
+import SearchScreen from '../components/Search/SearchScreen'
 
 const Stack = createStackNavigator()
 

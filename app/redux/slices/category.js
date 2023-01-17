@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
-import CategoriesService from '../../app/services/category'
+import CategoriesService from '../../services/category'
 
 export const fetchCategories = createAsyncThunk(
     'categories/fetchCatefories',

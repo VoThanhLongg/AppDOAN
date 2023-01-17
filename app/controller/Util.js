@@ -29,7 +29,7 @@ export default class Util {
         let result = 100 - Math.floor((priceSale * 100) / price)
         return result + '%'
     }
-    staticShowToast(message) {
+    static ShowToast(message) {
         return Toast.show(message, {
             position: 50,
             shadow: true,

@@ -18,7 +18,7 @@ import { useNavigation } from '@react-navigation/native'
 
 import { AuthContext } from '../../navigation/AuthProvider'
 
-const SignInScreen = () => {
+const RegisterScreen = () => {
     const navigation = useNavigation()
     const [userName, setUserName] = useState('')
     const [email, setEmail] = useState('')
@@ -209,7 +209,7 @@ const SignInScreen = () => {
     )
 }
 
-export default SignInScreen
+export default RegisterScreen
 
 const width = Dimensions.get('window').width
 const height = Dimensions.get('window').height

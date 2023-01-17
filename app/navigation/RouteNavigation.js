@@ -7,8 +7,8 @@ import 'react-native-gesture-handler'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { useDispatch } from 'react-redux'
 
-import StorageManager from '../StorageManager/StorageManager'
-import { setInfoUser } from '../store/slices/userSlice'
+import StorageManager from '../controller/StorageManager'
+import { setInfoUser } from '../redux/slices/userSlice'
 
 const Stack = createNativeStackNavigator()
 

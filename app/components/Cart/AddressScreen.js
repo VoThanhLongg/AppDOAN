@@ -6,8 +6,8 @@ import { InputStyle } from '../components'
 import { useNavigation } from '@react-navigation/native'
 import { useDispatch } from 'react-redux'
 import { addAddress } from '../../store/slices/address'
-import { ShowToast } from '../app/help/showToast'
 import { COLORS } from '../../contains'
+import Util from '../../controller/Util'
 
 const AddressScreen = () => {
     const dispatch = useDispatch()
@@ -18,7 +18,7 @@ const AddressScreen = () => {
     const changeCart = () => {
         dispatch(addAddress({ phone, address }))
         navigation.navigate('CartScreen')
-        ShowToast('Thêm địa chỉ thành công')
+        Util.ShowToast('Thêm địa chỉ thành công')
     }
 
     return (
